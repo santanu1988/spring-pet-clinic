@@ -12,5 +12,10 @@ public class IndexController {
 		model.addAttribute("extraInfo", "This is a test text.");
 		return "index";
 	}
+	
+	@RequestMapping("/oups")
+	public String oupsHandler() {
+		return "notimplemented";
+	}
 
 }
